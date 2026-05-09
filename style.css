@@ -1,0 +1,293 @@
+
+
+
+header {
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: -30px;
+    text-transform: uppercase;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #525252;
+    overflow-x: hidden;
+}
+
+.hero {
+    
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: bottom 50% center;
+        height: 750px;
+        background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    margin: 0px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-right: 0px;
+    width: 100%;
+}
+
+.hero p {
+    font-size: 5vw;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav {
+    background-color: #262626;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+        padding: 10px 0;
+    flex-direction: space-between;;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+
+nav li {
+    margin: 0 10px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav li:hover {
+    background-color: #2f362e;
+    transform: scale(0.9);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #322f2f;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #373837;
+}
+main {
+    padding: 20px;
+    background-color: #383636;
+    position: relative;
+    z-index: 10;
+    border-radius: 30px 30px 0 0;
+    padding: 40px 20px;
+    box-shadow: 0 -10px 20px rgba(0,0,0,0.1);
+    margin-top: -50px;
+}
+
+main h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+main p {
+    font-size:30px;
+    line-height: 1.6rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+.deskripsi-halaman {
+    box-sizing: border-box;
+    font-size: 24px;
+    margin-bottom: -0px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #313330;
+    padding: 0px;
+    width: 100%;
+    text-transform: uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    padding-bottom: 0px;
+    padding: 20px;
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+
+    
+}
+
+.flex-items {
+    background-color: #2d2a2a;
+    border: 1px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.flex-item p {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-self: center;
+}
+
+.resep-card {
+    background-color: rgb(106, 95, 95);
+    border: 1px srgb(0, 0, 0) #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: center;
+    color: white;
+    text-shadow: #1a1a1a 1px 1px 2px;
+}
+
+.resep-card p {
+    margin: 10px 0;
+    width: 90%;
+    text-align: left;
+
+}
+
+
+.resep-card p {
+    margin: 10px 0;
+    width: 90%;
+}
+
+.resep-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+@media screen and ( max-width: 600px) {
+
+    header {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+    }
+
+    .deskripsi-halaman {
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .flex-items {
+        flex-direction: row;
+        gap: 10px;
+        text-align: center;
+        justify-self: center;
+    }
+    .nav ul {
+        flex-direction: row;
+        height: 90px;
+    }
+
+    nav li {
+        display: flex;
+        flex-direction: row;
+        margin-right: 30px;
+    }
+
+    .hero {
+        text-align: center;
+        height:  400px;
+        
+    }
+
+    .hero p {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    nav a {
+        background-color: rgb(61, 61, 61);
+        display: flex;
+       
+    }
+
+
+    
+}
+
+@media screen and (min-width: 1000px) {}
+    .flex-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+        justify-self: center;
+        display: flex;
+    
+    .flex-item p {
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    .grid-card {
+        grid-template-columns: repeat(4, 1fr);
+        align-content: center;
+    }
+
+    .hero {
+        height: 700px;
+    }
+    
+   
+}
