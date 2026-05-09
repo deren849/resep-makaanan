@@ -1,2 +1,2 @@
 # resep-makaanan
-web front end pertamaku. di buat sejak  kelas 10 SMA 
+web front page pertamaku. di buat sejak  kelas 10 SMA 
